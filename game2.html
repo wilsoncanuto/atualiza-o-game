@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylegame2.css" />
+    <title>Jogo da memória Stranger Things</title>
+  </head>
+  <body>
+    <div class="board">
+      <div class="boardPoints">
+        <h3 class="title">Points : </h3><h3 class="title"  id="points">0</h3>
+      </div>
+      <div class="boardPoints">
+        <h3 class="title">Erros : </h3><h3 class="title" id="turns">0</h3>
+      </div>
+    </div>
+      <main class="memory-game">
+      <div class="card" data-card="01">
+        <img src="./img/12.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="02">
+        <img src="./img/07.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="03">
+        <img src="./img/08.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="04">
+        <img src="./img/09.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="05">
+        <img src="./img/10.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="06">
+        <img src="./img/11.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="01">
+        <img src="./img/12.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="02">
+        <img src="./img/07.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="03">
+        <img src="./img/08.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="04">
+        <img src="./img/09.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="05">
+        <img src="./img/10.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+      <div class="card" data-card="06">
+        <img src="./img/11.png" alt="face da carta" class="card-front" />
+        <img src="./img/00.png" alt="verso da carta" class="card-back" />
+      </div>
+  
+    </main>
+    <footer>
+      <form action="./game3.html">
+      <input type="submit" value="Level 2">
+      <input type="submit" value="Próximo">
+      </form>
+      <form action="./index.html">
+        <input type="submit" value="Recomeçar">
+        </form>
+      </footer>
+
+    <script src="./scripts.js"></script>
+    <audio id="musica" src="./audio/theme2.mp3" preload="auto">
+    <audio id="musica2" src="./audio/Panico.mp3" preload="auto"> 
+      <audio id="musica3" src="./audio/venceu.mp3" preload="auto"> 
+      <script >let html = document.querySelector("html");
+        let musica = document.querySelector("#musica");
+        html.addEventListener('click', () => {
+        musica.play();
+        })
+      </script>
+  </body>
+</html>
